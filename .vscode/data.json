@@ -1,0 +1,25 @@
+{
+  "hatType": 2,
+  "percentageWatched": 0,
+  "title": "Bacurau",
+  "hashKey": "5afe3fcfcc1266c84490d9da",
+  "isBlocked": false,
+  "isCvod": true,
+  "images": [
+    {
+      "type": 3,
+      "width": 170,
+      "height": 255,
+      "url": "https://d37wmy56xprd2c.cloudfront.net/fit-in/170x255/NWFmZTNmY2ZjYzEyNjZjODQ0OTBkOWRh_11032_COVER_VERTICAL_1000x1500.jpeg?timestamp=1614969566033"
+    }
+  ],
+  "categories": "Drama, Fantasia, Suspense",
+  "programType": "Program",
+  "mediaType": "MOVIE",
+  "description": "Num futuro recente, Bacurau, um povoado do sertão de Pernambuco, some misteriosamente do mapa. Quando uma série de assassinatos inexplicáveis começam a acontecer, os moradores da cidade tentam reagir. Mas como se defender de um inimigo desconhecido e implacável?",
+  "price": "Gratis",
+  "year": 2019,
+  "parentalRating": "16",
+  "idMotor": "defaultWithoutRecommendation",
+  "eligibility": "locker"
+}
