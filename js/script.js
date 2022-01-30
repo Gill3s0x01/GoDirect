@@ -1,11 +1,11 @@
 $('.carousel').slick({
   centerMode: true,
-  centerPadding: '100px',
+  centerPadding: '600px',
   slidesToShow: 1,
   autoPlay: true,
   arrows: true,
   dots: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 500,
   responsive: [
     {
       breakpoint: 768,
@@ -42,7 +42,7 @@ $('.gallery').slick({
     {
       breakpoint: 1450,
       settings: {
-        slidesToShow: 8,
+        slidesToShow: 7,
         slidesToScroll: 1,
         infinite: true,
         dots: true,
