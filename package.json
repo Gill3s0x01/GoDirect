@@ -1,0 +1,18 @@
+{
+  "name": "GoSky",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Gilles30/GoSky.git",
+  "author": "Lorison-Gilles <l.gilles.pereira@avanade.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  }
+}
