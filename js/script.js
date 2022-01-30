@@ -38,11 +38,20 @@ $('.gallery').slick({
   slidesToScroll: 1,
   responsive: [
     {
+      breakpoint: 1450,
+      settings: {
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
+        slidesToShow: 8,
+        slidesToScroll: 8,
+        infinite: false,
         dots: true,
       },
     },
