@@ -34,8 +34,10 @@ $('.gallery').slick({
   dots: false,
   infinite: false,
   speed: 300,
-  slidesToShow: 11,
+  slidesToShow: 9,
   slidesToScroll: 1,
+  prevArrow: '<i class="fas fa-chevron-left button-icon-prev"></i>',
+  nextArrow: '<i class="fas fa-chevron-right button-icon-next"></i>',
   responsive: [
     {
       breakpoint: 1450,
