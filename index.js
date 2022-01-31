@@ -8,7 +8,9 @@ function getMovies() {
       console.log(response.data)
 
       response.data.contents.forEach((film) => {
-        img1.innerHTML += `<li class="list-movie"><img class="movie-item" src=${film.images[0].url} alt=${film.title} title=${film.title}></li>`
+        img1.innerHTML += `
+          <img class="movie-itens" src=${film.images[0].url} alt=${film.title} title=${film.price} price=${film.price}>
+          `
       })
     })
     .catch((error) => console.log(error))
@@ -19,20 +21,51 @@ getMovies()
 // image carousel
 $('.carousel').slick({
   centerMode: true,
-  centerPadding: '600px',
+  centerPadding: '580px',
   slidesToShow: 1,
+  slidesToScroll: 1,
   autoPlay: true,
   arrows: true,
   dots: true,
   autoplaySpeed: 500,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1450,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '300px',
+        slidesToScroll: 1,
+        centerMode: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 1260,
+      settings: {
+        centerMode: true,
+        centerPadding: '250px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 1080,
+      settings: {
+        centerMode: true,
+        centerPadding: '120px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 950,
       settings: {
         arrows: true,
         centerMode: true,
         dots: true,
-        centerPadding: '30px',
+        centerPadding: '60px',
         slidesToShow: 1,
       },
     },
@@ -42,7 +75,7 @@ $('.carousel').slick({
         arrows: true,
         dots: true,
         centerMode: true,
-        centerPadding: '30px',
+        centerPadding: false,
         slidesToShow: 1,
       },
     },
@@ -68,7 +101,14 @@ $('.gallery').slick({
       },
     },
     {
-      breakpoint: 1024,
+      breakpoint: 1260,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+      },
+    },
+    {
+      breakpoint: 1030,
       settings: {
         slidesToShow: 8,
         slidesToScroll: 8,
@@ -90,8 +130,15 @@ $('.gallery').slick({
         slidesToScroll: 1,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ],
 })
+
+// view info movie
+
+// $('#mouseHover').mouseover(function () {
+//   $('#view').css('display', 'block')
+// })
+
+// $('#mouseHover').mouseout(function () {
+//   $('#view').css('display', 'none')
+// })

@@ -169,13 +169,29 @@ img {
 /* Moves galery */
 .gallery-content {
   width: 100%;
+  display: block;
   height: 300px;
   margin-right: 100px;
-  background-color: #db524f;
+
+  background-color: #ffffff;
+}
+.movie-itens {
+  height: 280px;
+  padding-bottom: 50px;
+
+  border-radius: 5px;
 }
 .movie-item {
   height: 280px;
-  padding-top: 10px;
+  box-shadow: #3b3b3b 0px 0px 8px;
+  border-radius: 5px;
+}
+
+.movie-item.title {
+  background-color: transparent;
+  color: #f2f2fa;
+  font-size: medium;
+  font-weight: 600;
 }
 
 .button-icon-next {
@@ -194,8 +210,8 @@ img {
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: -50;
-  transform: translateY(-50%);
+  left: -100;
+  transform: translateY(-50%) translateX(-50%);
   cursor: pointer;
   color: #fff;
   font-size: 30px;
@@ -205,33 +221,59 @@ img {
   opacity: 50%;
   transform: translate(-50%, -50%);
 }
+.section-wrapper {
+  margin-left: 60px;
+}
+
 /* Moves corousel */
 .carousel {
   width: 100%;
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.carousel .move-carousel {
+  transform: scale(1);
+  box-shadow: #3b3b3b 0px 0px 8px;
+  border-radius: 5px;
+}
+.carousel .move-carousel:hover {
+  transform: scale(1.1);
 }
 
-/* .move-carousel {
-  width: 600px;
-  height: 400px;
-} */
-
+#slick-slide-control00 {
+  background-color: #272727;
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+#slick-slide-control01 {
+  background-color: #272727;
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+#slick-slide-control02 {
+  background-color: #272727;
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+#slick-slide-control00:hover {
+  background-color: #3b3b3b;
+}
+#slick-slide-control01:hover {
+  background-color: #3b3b3b;
+}
+#slick-slide-control02:hover {
+  background-color: #3b3b3b;
+}
 /* sections */
 .title-section {
-  font-size: 16px;
+  margin-top: 30px;
+  font-size: 18px;
   font-weight: 700;
   color: #141414;
-}
-.list-movie {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-left: 50px;
-  padding-right: 100px;
-  height: auto;
-  font-weight: 600;
+  padding-top: 60px;
 }
