@@ -117,6 +117,13 @@ $('.gallery').slick({
       },
     },
     {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+      },
+    },
+    {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
