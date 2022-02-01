@@ -8,8 +8,9 @@ function getMovies() {
       console.log(response.data)
 
       response.data.contents.forEach((film) => {
-        img1.innerHTML += `
-          <img class="movie-itens" src=${film.images[0].url} alt=${film.title} title=${film.price} price=${film.price}>
+        img1.innerHTML += ` <div class="wrapper-img">
+          <img class="movie-itens" src=${film.images[0].url} alt=${film.title} title=${film.year} price=${film.price}>
+          <i class="fas fa-cart-plus cartIcon" onClick="onClickCart()" title=${film.price}></i></div>
           `
       })
     })
@@ -21,14 +22,34 @@ getMovies()
 // image carousel
 $('.carousel').slick({
   centerMode: true,
-  centerPadding: '580px',
+  centerPadding: '590px',
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoPlay: true,
-  arrows: true,
+  arrows: false,
   dots: true,
-  autoplaySpeed: 500,
+  autoPlay: true,
+  autoplaySpeed: 1000,
   responsive: [
+    {
+      breakpoint: 1895,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '480px',
+        slidesToScroll: 1,
+        centerMode: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 1690,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '420px',
+        slidesToScroll: 1,
+        centerMode: true,
+        dots: true,
+      },
+    },
     {
       breakpoint: 1450,
       settings: {
@@ -50,7 +71,7 @@ $('.carousel').slick({
       },
     },
     {
-      breakpoint: 1080,
+      breakpoint: 1090,
       settings: {
         centerMode: true,
         centerPadding: '120px',
@@ -64,16 +85,16 @@ $('.carousel').slick({
       settings: {
         arrows: true,
         centerMode: true,
-        dots: true,
+        dots: false,
         centerPadding: '60px',
         slidesToShow: 1,
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 520,
       settings: {
         arrows: true,
-        dots: true,
+        dots: false,
         centerMode: true,
         centerPadding: false,
         slidesToShow: 1,
@@ -110,16 +131,16 @@ $('.gallery').slick({
     {
       breakpoint: 1030,
       settings: {
-        slidesToShow: 8,
-        slidesToScroll: 8,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         infinite: false,
         dots: false,
       },
     },
     {
-      breakpoint: 800,
+      breakpoint: 950,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 2,
       },
     },
@@ -140,12 +161,7 @@ $('.gallery').slick({
   ],
 })
 
-// view info movie
-
-// $('#mouseHover').mouseover(function () {
-//   $('#view').css('display', 'block')
-// })
-
-// $('#mouseHover').mouseout(function () {
-//   $('#view').css('display', 'none')
-// })
+function onClickCart() {
+  var x = confirm('Vamos adicionar esse item no seu carrinho, certo?')
+  document.getElementById('Confirmação').innerHTML = x
+}

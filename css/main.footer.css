@@ -1,0 +1,124 @@
+footer {
+  bottom: 0px;
+  margin-top: 2100px;
+  width: 100%;
+  background: rgba(242, 242, 250, 255);
+  font-family: 'Roboto', sans-serif;
+}
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.left .content p {
+  text-align: justify;
+}
+.appBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.appBox p {
+  margin-top: 20px;
+  color: #656565;
+  font-weight: 700;
+}
+
+.content .appleStore {
+  margin-left: 150px;
+  width: 160px;
+  cursor: pointer;
+}
+.content .googlePlay {
+  margin-left: 2px;
+  width: 160px;
+  cursor: pointer;
+}
+#googlePlay:hover {
+  fill: #f12020;
+}
+
+.content .appleStore:hover path {
+  fill: #f12020;
+}
+
+.left img {
+  margin-left: 80px;
+  width: 50px;
+  margin-top: 20px;
+}
+.iconFooter {
+  padding: 20px 0px 20px 100px;
+}
+.topFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+  box-shadow: #8a8b90 0px 0px 2px;
+}
+.socialIcons {
+  color: #656565;
+  font-size: 22px;
+  margin: 5px;
+}
+.socialIcons:hover {
+  color: #f12020;
+}
+
+.center .place {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.center .place .aboutText {
+  margin-top: 12px;
+  color: #3a3a3a;
+  font-weight: 500;
+  font-size: 14px;
+}
+.center .place .aboutText:hover {
+  color: #f12020;
+}
+.center .place .aboutFooter {
+  margin-top: 20px;
+  color: #3a3a3a;
+  font-weight: 500;
+  font-size: 14px;
+}
+.center .place .aboutFooter:hover {
+  color: #f12020;
+}
+.center h2 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 20px;
+  color: #8a8b90;
+}
+
+.aboutTextRight {
+  margin-top: 40px;
+  color: #4e4e4e;
+  font-weight: 600;
+  font-size: 14px;
+}
+@media screen and (max-width: 460px) {
+  footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 980px) {
+  footer {
+    bottom: 0;
+    margin-top: 4000px;
+  }
+}

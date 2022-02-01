@@ -7,6 +7,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   color: #141414;
+  overflow-x: hidden;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -15,7 +17,6 @@ a {
 
 /* Header / Navbar */
 .header {
-  /* position: fixed; */
   width: 100%;
   font-weight: 600;
   top: 0;
@@ -23,7 +24,6 @@ a {
   justify-content: space-between;
   background: #f2f2fa;
   padding: 15px 20px;
-  z-index: 1;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
   margin: 0 10px;
@@ -65,13 +65,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 5px;
   width: 100%;
-  margin-left: 50px;
   padding-right: 100px;
   height: auto;
   font-weight: 600;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
+  box-shadow: 10px 1px 5px #c3c3c3;
 }
 .nav-item-center {
   display: flex;
@@ -172,26 +173,17 @@ img {
   display: block;
   height: 300px;
   margin-right: 100px;
-
   background-color: #ffffff;
 }
 .movie-itens {
   height: 280px;
   padding-bottom: 50px;
-
   border-radius: 5px;
 }
 .movie-item {
   height: 280px;
   box-shadow: #3b3b3b 0px 0px 8px;
   border-radius: 5px;
-}
-
-.movie-item.title {
-  background-color: transparent;
-  color: #f2f2fa;
-  font-size: medium;
-  font-weight: 600;
 }
 
 .button-icon-next {
@@ -221,8 +213,35 @@ img {
   opacity: 50%;
   transform: translate(-50%, -50%);
 }
-.section-wrapper {
-  margin-left: 60px;
+.wrapper-img {
+  display: inline;
+  width: 100%;
+  justify-content: space-between;
+  height: 100%;
+}
+.cartIcon {
+  position: relative;
+  top: -295px;
+  right: 75px;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  border: #ffffff solid 3px;
+  background-color: #2a2a2a;
+}
+.cartIcons {
+  position: relative;
+  top: -275px;
+  right: 70px;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  border: #ffffff solid 3px;
+  background-color: #2a2a2a;
 }
 
 /* Moves corousel */
@@ -236,7 +255,7 @@ img {
   border-radius: 5px;
 }
 .carousel .move-carousel:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #slick-slide-control00 {
@@ -271,9 +290,21 @@ img {
 }
 /* sections */
 .title-section {
-  margin-top: 30px;
+  margin-top: 60px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
   color: #141414;
-  padding-top: 60px;
+
+  padding-bottom: 10px;
+}
+.section-wrapper {
+  margin-left: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    height: 100%;
+  }
 }
