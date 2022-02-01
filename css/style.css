@@ -320,3 +320,10 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 1450px) {
+  .wrapper-img {
+    display: inline;
+    margin: auto;
+    padding-left: 10px;
+  }
+}

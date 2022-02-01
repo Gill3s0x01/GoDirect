@@ -135,6 +135,19 @@ footer {
   font-size: 14px;
   align-items: center;
 }
+@media screen and (max-width: 1450px) {
+  .content {
+    flex-direction: column;
+    display: flex;
+  }
+  .content .googlePlay {
+    margin-left: 150px;
+  }
+  footer {
+    bottom: 0;
+    margin-top: 2500px;
+  }
+}
 
 @media screen and (max-width: 460px) {
   footer {
