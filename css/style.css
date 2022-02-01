@@ -104,9 +104,6 @@ a {
   transition: all 1s linear;
   box-shadow: 10px 1px 5px #c3c3c3;
 }
-.nav-content .navbarMenu {
-  display: none;
-}
 
 .nav-item-center {
   display: flex;
@@ -212,6 +209,12 @@ img {
 }
 .section-wrapper {
   margin-left: 60px;
+}
+
+@media only screen and (max-width: 2100px) and (min-width: 1450px) {
+  .nav-content .navbarMenu {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 760px) and (min-width: 600px) {
