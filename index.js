@@ -165,3 +165,7 @@ function onClickCart() {
   var x = confirm('Vamos adicionar esse item no seu carrinho, certo?')
   document.getElementById('Confirmação').innerHTML = x
 }
+
+function userLink() {
+  window.location.href = 'https://github.com/Gilles30'
+}
