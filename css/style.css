@@ -211,7 +211,7 @@ img {
   margin-left: 60px;
 }
 
-@media only screen and (max-width: 2100px) and (min-width: 1450px) {
+@media only screen and (max-width: 2100px) and (min-width: 500px) and (orientation: landscape) {
   .nav-content .navbarMenu {
     display: none;
   }
@@ -230,7 +230,7 @@ img {
     width: 100%;
   }
   .nav-content .navbarMenu {
-    margin-left: 100px;
+    margin-left: 70px;
   }
 
   .nav-content .navbarMenu .iconNavbar {
