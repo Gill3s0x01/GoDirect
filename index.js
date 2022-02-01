@@ -169,3 +169,9 @@ function onClickCart() {
 function userLink() {
   window.location.href = 'https://github.com/Gilles30'
 }
+function navBar() {
+  var x = confirm(
+    'Ops!! Desculpe, mas estamos em manutenção, volte mais tarde!!!'
+  )
+  document.getElementById('Manutenção').innerHTML = x
+}

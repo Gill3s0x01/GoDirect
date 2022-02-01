@@ -31,6 +31,27 @@ a {
   transition: all 1s linear;
   margin: 0 10px;
 }
+
+.header .navbar {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background: #fff;
+  width: 30rem;
+  height: calc(100vh - 9.5rem);
+}
+
+.header .navbar.active {
+  right: 0;
+}
+
+.header .navbar a {
+  color: var(--black);
+  display: block;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
 .icon {
   cursor: pointer;
   color: #6c6d6f;
@@ -83,6 +104,10 @@ a {
   transition: all 1s linear;
   box-shadow: 10px 1px 5px #c3c3c3;
 }
+.nav-navbarMenu {
+  display: none;
+}
+
 .nav-item-center {
   display: flex;
   align-items: center;
@@ -201,6 +226,23 @@ img {
     height: auto;
     width: 100%;
   }
+  .nav-content .navbarMenu {
+    margin-left: 100px;
+  }
+
+  .nav-content .navbarMenu .iconNavbar {
+    font-size: 20px;
+  }
+  .nav-content .navbarMenu:hover {
+    color: #db524f;
+  }
+  .nav-content .navbarMenu:active {
+    color: #db524f;
+  }
+  .nav-content .navbarMenu:focus {
+    color: #db524f;
+  }
+
   .play-button {
     display: none;
   }
