@@ -55,6 +55,12 @@ a {
   padding-left: 100px;
   align-items: center;
 }
+.nav-content .navContentIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
 .nav-content img {
   height: 35px;
   width: 85px;
@@ -306,5 +312,8 @@ img {
   .carousel {
     width: 100%;
     height: 100%;
+  }
+  .navContentIcons {
+    display: none;
   }
 }

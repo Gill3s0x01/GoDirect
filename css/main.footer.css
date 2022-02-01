@@ -111,6 +111,31 @@ footer {
   font-weight: 600;
   font-size: 14px;
 }
+
+.bottom {
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+}
+#copyright p {
+  color: #656565;
+  font-size: 12px;
+  background: rgba(242, 242, 250, 255);
+  padding: 20px 10px 20px 90px;
+}
+.bottom .aboutBottom {
+  padding: 10px 10px 10px 100px;
+  color: #656565;
+  font-size: 14px;
+  align-items: center;
+}
+.bottom .bottomText {
+  padding: 10px 10px 10px 10px;
+  color: #656565;
+  font-size: 14px;
+  align-items: center;
+}
+
 @media screen and (max-width: 460px) {
   footer {
     display: none;
