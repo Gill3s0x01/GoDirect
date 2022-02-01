@@ -154,9 +154,22 @@ footer {
     display: none;
   }
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) and (orientation: landscape) {
   footer {
     bottom: 0;
     margin-top: 4000px;
+  }
+}
+
+@media screen and (max-width: 430px) and (max-height: 900px) {
+  footer {
+    bottom: 0;
+    margin-top: 4000px;
+  }
+  #copyright {
+    display: none;
+  }
+  .bottom {
+    display: none;
   }
 }

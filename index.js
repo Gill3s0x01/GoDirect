@@ -5,8 +5,6 @@ function getMovies() {
   axios
     .get(url)
     .then((response) => {
-      console.log(response.data)
-
       response.data.contents.forEach((film) => {
         img1.innerHTML += ` <div class="wrapper-img">
           <img class="movie-itens" src=${film.images[0].url} alt=${film.title} title=${film.year} price=${film.price}>
@@ -102,7 +100,9 @@ $('.carousel').slick({
     },
   ],
 })
+
 // images movies galery
+
 $('.gallery').slick({
   dots: false,
   infinite: false,
@@ -115,7 +115,7 @@ $('.gallery').slick({
     {
       breakpoint: 1450,
       settings: {
-        slidesToShow: 7,
+        slidesToShow: 6,
         slidesToScroll: 1,
         infinite: true,
         dots: false,
