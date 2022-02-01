@@ -162,7 +162,7 @@ $('.gallery').slick({
 })
 
 function onClickCart() {
-  var x = confirm('Vamos adicionar esse item no seu carrinho, certo?')
+  var x = confirm('Vamos adicionar esse item no seu carrinho!!!')
   document.getElementById('Confirmação').innerHTML = x
 }
 

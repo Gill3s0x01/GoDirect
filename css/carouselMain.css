@@ -1,0 +1,45 @@
+/* Moves corousel */
+.carousel {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.carousel .move-carousel {
+  transform: scale(1);
+  box-shadow: #3b3b3b 0px 0px 8px;
+  border-radius: 5px;
+}
+.carousel .move-carousel:hover {
+  transform: scale(1.05);
+}
+
+#slick-slide-control00 {
+  background-color: #272727;
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+#slick-slide-control01 {
+  background-color: #272727;
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+#slick-slide-control02 {
+  background-color: #272727;
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+#slick-slide-control00:hover {
+  background-color: #3b3b3b;
+}
+#slick-slide-control01:hover {
+  background-color: #3b3b3b;
+}
+#slick-slide-control02:hover {
+  background-color: #3b3b3b;
+}
