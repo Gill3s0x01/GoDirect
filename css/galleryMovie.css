@@ -84,6 +84,15 @@
   border: #ffffff solid 3px;
   background-color: #2a2a2a;
 }
+
+@media only screen and (max-width: 760px) and (min-width: 600px) {
+  .cartIcons {
+    position: relative;
+    top: -275px;
+    right: -140px;
+  }
+}
+
 @media screen and (max-width: 1380px) and (orientation: landscape) {
   .gallery-contentAPI {
     width: 100%;
@@ -105,5 +114,21 @@
     position: relative;
     top: -275px;
     right: 90px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+  .cartIcons {
+    position: relative;
+    top: -275px;
+    right: -140px;
+  }
+}
+
+@media screen and (max-width: 430px) and (max-height: 900px) and (orientation: portrait) {
+  .cartIcons {
+    position: relative;
+    top: -275px;
+    right: -140px;
   }
 }
