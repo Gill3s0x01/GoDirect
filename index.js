@@ -115,7 +115,7 @@ $('.gallery').slick({
     {
       breakpoint: 1450,
       settings: {
-        slidesToShow: 5,
+        slidesToShow: 7,
         slidesToScroll: 1,
         infinite: true,
         dots: false,
